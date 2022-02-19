@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+	</head>
+	<body>
+		<h1>Lab 06: Flask Tutorial</h1>
+		<h3>
+		{% for name in routeNames %}
+			<a href='{{ url_for(name) }}'>{{ name }}</a>
+		{% endfor %}
+		</h3>
+		<p1>Welcome! Click the above links to test the available routes for this lab!
+		<br/>
+		<br/>
+		You are currently on the HOME page!
+		</p1>
+	</body>
+</html>

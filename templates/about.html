@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>About Page</title>
+        </head>
+        <body>
+		<h1>Lab 06: Flask Tutorial</h1>
+		<h3>
+                {% for name in routeNames %}
+                        <a href='{{ url_for(name) }}'>{{ name }}</a>
+                {% endfor %}
+                </h3>
+		{% for about in aboutInfo %}
+		<p1>{{ about.classNumber }} {{ about.className}}</p1><br/>
+		<p1>{{ about.classSemester }} {{ about.classYear }}</p1><br/>
+		<p1>{{ about.studentName }} -- {{ about.studentId }}</p1><br/>
+		{% endfor %}
+
+		<br/>
+		You are currently on the ABOUT page!
+        </body>
+</html> 
+

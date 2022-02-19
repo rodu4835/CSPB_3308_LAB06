@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Colors Page</title>
+        </head>
+        <body>
+                <h1>Lab 06: Flask Tutorial</h1>
+                <h3>
+                {% for name in routeNames %}
+                        <a href='{{ url_for(name) }}'>{{ name }}</a>
+                {% endfor %}
+                </h3>
+		<br/>
+		<object data= '{{ url_for('static', filename='colorsList.txt') }}' type='text/plain' width='500' style='height: 150px'>
+		</object>
+
+		<br/>
+		You are currently on the COLORS page!
+        </body>
+</html>
